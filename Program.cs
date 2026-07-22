@@ -59,8 +59,10 @@ void Sacar()
     Console.WriteLine("\nDigite o valor para sacar: \n");
     decimal valor = PedirDecimal();
     if (valor > 0)
+    {
         valor = valor *-1;
-    
+    }
+
     if(ObterSaldo()  < valor * -1)
     {
         Console.WriteLine("Saldo Insuficiente \n\n"); 
