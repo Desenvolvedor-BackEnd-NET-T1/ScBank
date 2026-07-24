@@ -9,10 +9,6 @@
 // O usuário deve conseguir fazer várias operações até escolher sair.
 // O extrato deve exibir todas as entradas e saídas e o saldo da conta 
 
-
-using System.ComponentModel;
-using System.Reflection.Metadata;
-
 void ExibirMenu()
 {   
     Console.WriteLine("Bem vindos ao ScBank");
