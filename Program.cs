@@ -1,5 +1,22 @@
 ﻿using ScBank;
 
+Cliente clienteObj = new Cliente();
+clienteObj.Preencher();
+
+clienteObj.Imprimir();
+clienteObj.SetCpf("15678900");
+clienteObj.Imprimir();
+clienteObj.SetCpf("03903277002");
+clienteObj.Imprimir();
+
+
+Cliente clienteObj2 = new Cliente();
+clienteObj2.Preencher();
+clienteObj2.Imprimir();
+
+
+
+
 var contaDoArthur = new Conta("Arthur");
 
 contaDoArthur.Depositar(1000);
