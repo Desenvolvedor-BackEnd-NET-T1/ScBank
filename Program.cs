@@ -25,3 +25,5 @@ contaDoArthur.imprimirExtrato();
 
 var contaDoJoao = new Conta();
 contaDoJoao.Titular = "João";
+
+contaDoJoao.imprimirExtrato();

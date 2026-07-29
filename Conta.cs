@@ -12,7 +12,7 @@ namespace ScBank
         //construtor
         public Conta()
         {
-            
+            Numero = new Random().Next();
         }
         public Conta(string titular)
         {
