@@ -11,7 +11,15 @@ namespace ScBank
         {
             NumeroMatricula = new Random().Next();
         }
-        public override void Preencher()
+
+        public static Funcionario CriarEPreencherFuncionario()
+        {
+            Funcionario funcionarioObj = new Funcionario();
+            funcionarioObj.Preencher();
+            return funcionarioObj;
+        }
+
+        public  override  void Preencher()
         {
             Console.WriteLine("Cadastro de Funcionario");
             base.Preencher();

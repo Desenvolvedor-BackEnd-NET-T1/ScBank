@@ -1,13 +1,13 @@
 ﻿using ScBank;
 
 
-Funcionario funcionarioObj  = new Funcionario();
-funcionarioObj.Preencher();
+
+
+Funcionario funcionarioObj  = Funcionario.CriarEPreencherFuncionario();
 funcionarioObj.Imprimir();
 
 
-Cliente clienteObj = new Cliente();
-clienteObj.Preencher();
+Cliente clienteObj = Cliente.CriarEPreencherCliente();
 
 clienteObj.Imprimir();
 // clienteObj.SetCpf("15678900");
@@ -16,8 +16,7 @@ clienteObj.Imprimir();
 // clienteObj.Imprimir();
 
 
-Cliente clienteObj2 = new Cliente();
-clienteObj2.Preencher();
+Cliente clienteObj2 = Cliente.CriarEPreencherCliente();
 clienteObj2.Imprimir();
 
 
