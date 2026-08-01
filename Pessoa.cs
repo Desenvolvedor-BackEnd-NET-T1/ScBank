@@ -66,10 +66,14 @@ namespace ScBank
             return cpf.EndsWith(digito);
         }
 
-        public abstract void Preencher();
-        public abstract void Imprimir(); 
+        // metodos abstratos não tem corpo e obriga os filhos a implementalos. 
+        //public abstract void Preencher();
+        //public abstract void Imprimir(); 
 
-        protected void PreencherPai()
+
+        //Metodo virtual é utilizado para herenca polimorfica, porem ele traz o corpo, 
+        //ele por ser virtual indica que ele pode ser sobre escrito mas não obrigatoriamente 
+        public virtual void Preencher()
         {
             Console.Write("Digite o nome: ");
             Nome = Console.ReadLine();
@@ -94,7 +98,7 @@ namespace ScBank
                 Cpf = Console.ReadLine();
             }
         }
-        protected void ImprimirPai()
+        public virtual void Imprimir()
         {
             Console.WriteLine("\n\n-----------------------");
             Console.WriteLine("Nome: " +Nome);

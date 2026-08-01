@@ -9,14 +9,14 @@ namespace ScBank
         public override void Preencher()
         {
             Console.WriteLine("Cadastro de Cliente");
-            PreencherPai();
+            base.Preencher();
             Console.WriteLine("Digite o Enderco: ");
             End = Console.ReadLine();
         }
 
         public override void Imprimir()
         {
-            ImprimirPai();
+            base.Imprimir();
             Console.WriteLine("Endereço: "+ End);
         }
     }
